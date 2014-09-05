@@ -22,13 +22,13 @@ good. For me I can use markers, split windows, and tabs the organize what I am
 looking at because I am going to need to do that anyways.  Also there is a good
 reason to contain all of those objects in one class and that is for organization
 and self documentation. By placing a class inside and another class you are
-saying either any object that uses this class will need that other varables,
+saying either any object that uses this class will need that other variables,
 methods, or whatever is in this class or if it is private then nobody is going
-to use this but this class. Don't make a dependancy if zero to one objects in
-your program are using it. If 2 or more need it then yes, make it a dependancy.  
+to use this but this class. Don't make a dependency if zero to one objects in
+your program are using it. If 2 or more need it then yes, make it a dependency.  
 
 >I am assuming that you are working in a language that allows objects or classes
->within objects or classes like Javascript, ruby, etc... If not, you will want
+>within objects or classes like JavaScript, ruby, etc... If not, you will want
 >to modify some of what I describe by including a new object or class.
 
 If you are luck enough to have a wide screen monitor with your command line open
@@ -41,7 +41,7 @@ a few extra steps.
 
 ![open file](/assets/images/posts/large_file_vim_code_start_2014-09-04.png)
 
-Start by spliting the screen in half vertically with ```:vsp``` or ```<ctrl-w>
+Start by splitting the screen in half vertically with ```:vsp``` or ```<ctrl-w>
 v```.
 
 ![split in half](/assets/images/posts/large_file_vim_vertical_split_2014-09-04.png) 
@@ -87,7 +87,7 @@ add the method call here.
 ![final re-factor](/assets/images/posts/large_file_vim_final_code_2014-09-04.png)
 
 Now let's back up and say that instead of moving the code, which is deleting it
-one place and pasteing it in another, that we want the keep the code in place
+one place and pasting it in another, that we want the keep the code in place
 and copy that code to the new method. A good reason for this is if you have unit
 test coverage of the code but you want to pull code into a different object and
 method and unit the new one first. After the test is passing then you delete the
@@ -122,5 +122,5 @@ memory to the point that you don't think about it then it's pretty cool. The
 first time I did I didn't realize it until I scrolled through my history.
 
 Now wash, rinse, and repeat. Re-factor the code until you like it or it works at
-least. This is just one the ways I use the tools together to complete a writting
+least. This is just one the ways I use the tools together to complete a writing
 or coding task.
