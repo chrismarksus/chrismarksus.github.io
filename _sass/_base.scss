@@ -1,3 +1,5 @@
+@import
+url(http://fonts.googleapis.com/css?family=Permanent+Marker|Reenie+Beanie);
 /**
  * Reset some basic elements
  */
@@ -80,6 +82,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    font-family: 'Permanent Marker', serif;
 }
 
 
