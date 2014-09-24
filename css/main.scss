@@ -6,8 +6,9 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$title-font-family: 'Permanent Marker', sans-serif;
+
+$base-font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+$title-font-family: 'Rock Salt', sans-serif;
 $callout-font-family: 'Reenie Beanie', sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -59,5 +60,5 @@ $on-laptop:        800px;
     clear: both;
     text-align: center;
     font-size: 90%;
-    color: #CCC;
+    color: #999;
 }

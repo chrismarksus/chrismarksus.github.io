@@ -2,12 +2,13 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 10px solid #000;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    background-color: #000;
 }
 
 .site-title {
@@ -15,11 +16,22 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {
         color: $grey-color-dark;
+    }
+    & svg {
+        fill: #FFF;
+    }
+    & a:hover svg {
+        file: $brand-color;
+    }
+    @media screen and (max-width: 800px) {
+        & svg {
+            width: 50%;
+            height: 50%;
+        }
     }
 }
 
@@ -167,6 +179,7 @@
 
 .page-heading {
     font-size: 20px;
+    text-align: center;
 }
 
 .post-list {
@@ -234,4 +247,8 @@
             font-size: 18px;
         }
     }
+}
+.rss-subscribe {
+    font-family: 'Reenie Beanie', serif;
+    text-align: center;
 }
