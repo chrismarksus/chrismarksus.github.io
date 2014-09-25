@@ -4,7 +4,7 @@ title: "Saving your file and layout in Vim"
 tag: vim, editor
 ---
 
-You read the article on tabs and splits in Vim and tried it out [see post]. You setup paths so you can rock the ```:find``` command [see post]. You start to get the hang of it then at the end of the day you type ```:qa``` an shut it all down. The next day you open Vim and Ouch!. I have to setup all my tabs and splits and load the files again. <!--more-->Now you just went from feeling that Vim could be great, to thinking it's most useless editor created. My {NAME OF IDE I THINK IS AWSOME HERE} just remembers all this stuff, right!
+You read the article on tabs and splits in Vim and tried it out [see post]({% post_url 2014-09-03-splits-and-tab-a-one-two-punch %}). You setup paths so you can rock the ```:find``` command. You start to get the hang of it then at the end of the day you type ```:qa``` an shut it all down. The next day you open Vim and Ouch!. I have to setup all my tabs and splits and load the files again. <!--more-->Now you just went from feeling that Vim could be great, to thinking it's most useless editor created. My {NAME OF IDE I THINK IS AWSOME HERE} just remembers all this stuff, right!
 
 > This is not available to Vi versions only Vim
 
@@ -16,20 +16,18 @@ Views in Vim only store information for the current window. So if you are a tab 
 
 
 #### Save a vim view
-```shell
-:mkview ~/myview.vim
-```
+
+``` :mkview ~/myview.vim ```
 
 #### Load a vim view after Vim is open
-```shell
-:loadview ~/myview.vim
-```
+
+``` :loadview ~/myview.vim ```
 
 #### Auto save a view
 
 Add this to your *.vimrc* to auto save views
 
-```shell
+```
 autocmd BufWinLeave *.* mkview!
 autocmd BufWinEnter *.* silent loadview
 ```
@@ -40,24 +38,21 @@ Sessions are like views but in Vim they store more information on buffers, the c
 
 
 #### Save a vim session
-```shell
-:mksession ~/mysession.vim
+
+``` :mksession ~/mysession.vim
 ```
 
 #### Load a vim session after Vim is open
-```shell
-:source ~/mysession.vim
-```
+
+``` :source ~/mysession.vim ```
 
 #### Load a vim session when opening Vim
-```shell
-$ vim -S ~/mysession.vim
-```
+
+``` $ vim -S ~/mysession.vim ```
 
 #### How do I find my session options
-```shell
-:set ssop?
-````
+
+``` :set ssop?  ````
 
 >By the way, if you want to find out any options in Vim type ```:set {OPTION}?```. The *?* is  
 
