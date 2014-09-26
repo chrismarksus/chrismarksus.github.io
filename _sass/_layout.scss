@@ -28,6 +28,8 @@
     & svg {
         fill: #FFF;
         max-height:250px;
+        padding: 0;
+        margin: 0;
     }
     & a:hover svg {
         file: $brand-color;
@@ -179,7 +181,7 @@
  * Page content
  */
 .page-content {
-    padding: 0;
+    padding: 10px 0;
 }
 
 .page-heading {
