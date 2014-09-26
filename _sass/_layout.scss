@@ -2,13 +2,17 @@
  * Site header
  */
 .site-header {
-    border-top: 10px solid #000;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
     background-color: #000;
+    @media screen and (min-width: 800px) {
+        & {
+            background: #000 url('../assets/images/chris_marks_edge.png')
+            repeat-x bottom center;
+        }
+    }
 }
 
 .site-title {
@@ -174,7 +178,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0;
 }
 
 .page-heading {
