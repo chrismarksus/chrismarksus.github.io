@@ -27,6 +27,7 @@
     }
     & svg {
         fill: #FFF;
+        max-height:250px;
     }
     & a:hover svg {
         file: $brand-color;
