@@ -1,8 +1,10 @@
-
 ---
 layout: post
-title:"Separate your rake tasks"
+title:  "Separate your rake tasks"
+date:   2015-01-23 22:45:51
+categories: code 
 tags: ruby rake
+---
 
 This was a little trick that I found online when I was looking for information on unit testing rake tasks. The programmer broke up the tasks into different files so they could be loaded and tested apart from the rest of the tasks. I have started to do this and I find it has some benefits on it's own.
 
