@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Git a list of files into Vim"
-date: 2015-01-27 10:17:00 -0800
-category: source control
+date: 2015-01-27 22:45:51
+categories: source control
 tags: vim git java xml bash pom
 ---
 
