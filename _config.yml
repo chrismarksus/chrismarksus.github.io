@@ -10,3 +10,5 @@ url: "http://chrismarksus.github.io" # the base hostname & protocol for your sit
 # Build settings
 markdown: redcarpet
 excerpt_separator: <!--more-->
+# Don't confuse travis ci
+exclude: [vendor]
