@@ -50,11 +50,11 @@ For commenting you can add *//* or *#* in front of the code. The results are not
 
 Start by typing in normal mode ```<ctrl> v```. Then type ```2j``` this will place the selection on the 3 line that you want to change.
 
-![](/assets/images/posts/select-lines-for-commenting.png)
+![select lines for commenting](/assets/images/posts/select-lines-for-commenting.png)
 
 Now type ```s``` to remove the space character form each location and drop you into insert mode so you can start typing. Type *//* then press ```<esc>```. 
 
-![](/assets/images/posts/select-lines-add-comments.png)
+![add comments](/assets/images/posts/select-lines-add-comments.png)
 
 You should see the all 3 lines are commented out now.
 
@@ -72,19 +72,19 @@ li.three { padding: 10px }
 Start by typing in normal mode ```<ctrl> v```. Then type ```2j``` this will place the selection on the 3 line that you want to change.
 
 
-![](/assets/images/posts/css-2j.png)
+![css 2](/assets/images/posts/css-2j.png)
 
 Type ```e``` to jump to the end of the word. This will place the block selection around the *padding* on the 3 lines.
 
-![](/assets/images/posts/css-e.png)
+![css e](/assets/images/posts/css-e.png)
 
 Next type ```c``` to change the word. The word *padding* will be deleted or *yanked* in Vim terminology. This will also drop you into insert mode so you can start typing text.
 
-![](/assets/images/posts/css-c.png)
+![css c](/assets/images/posts/css-c.png)
 
 Last type out the word margin and press ```<esc>```. At first you only see the word *margin* in the last line (or the first line if you started at the bottom and selected to the top). Once to press ```<esc>``` Vim assumes that you want to make the same change and the change is applied to all of the selected lines.
 
-![](/assets/images/posts/css-margin_esc.png)
+![css margins esc](/assets/images/posts/css-margin_esc.png)
 
 
 ##Ragged edge edits with visual block
@@ -100,19 +100,19 @@ var thing1 = "red"
 
 Type the ```$``` to jump to the end of the line.
 
-![](/assets/images/posts/ragged-edge-edit_01.png)
+![edit 01](/assets/images/posts/ragged-edge-edit_01.png)
 
 Type ```<ctrl> v``` then ```2j$``` to move down 2 lines and jump to the end of the last line.
 
-![](/assets/images/posts/ragged-edge-edit_02.png)
+![edit 02](/assets/images/posts/ragged-edge-edit_02.png)
 
 Next type ```A``` this will put you at the end of each line in the edit and then type a comma.
 
-![](/assets/images/posts/ragged-edge-edit_03.png)
+![edit 03](/assets/images/posts/ragged-edge-edit_03.png)
 
 Last hit ```<esc>``` to see the changes.
 
-![](/assets/images/posts/ragged-edge-edit_04.png)
+!edit 04[](/assets/images/posts/ragged-edge-edit_04.png)
 
 ##Which way is better
 

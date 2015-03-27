@@ -52,7 +52,7 @@ can't make nested objects or classes then this is the time to start that new
 dependency. I may even split it into 3 or 4 panels depending on the number of
 method that I am pulling code from at one time.
 
-![](/assets/images/posts/large_file_vim_horizontal_split_2014-09-04.png)
+![split again](/assets/images/posts/large_file_vim_horizontal_split_2014-09-04.png)
 
 On the 2 quarter panels you can position to code to the method that has code
 that you want to pull out an add or combine into a new method. In the other
