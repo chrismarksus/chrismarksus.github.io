@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 2.1
 script:
+  - sass-convert --from scss --to scss --in-place --recursive _sass
   - bundle exec jekyll build
   - bundle exec htmlproof ./_site --only-4xx
   - scss-lint -c ._scss-lint.yml

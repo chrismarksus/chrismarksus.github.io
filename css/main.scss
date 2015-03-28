@@ -1,13 +1,13 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+@charset "UTF-8";
 
 
 
 // Our variables
 
-$base-font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+$base-font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 $title-font-family: 'Rock Salt', sans-serif;
 $callout-font-family: 'Reenie Beanie', sans-serif;
 $base-font-size:   16px;
@@ -20,6 +20,33 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fff;
 $brand-color:      #2a7ae2;
+$code-color:       #eff;
+$site-header-color: #000;
+
+$code-color-a:     #008080;
+$code-color-b:     #099;
+$code-color-c:     #d14;
+$code-color-d:     #998;
+$code-color-e:     #999;
+$code-color-f:     #900;
+$code-color-g:     #000;
+$code-color-h:     #fff;
+$code-color-i:     #555;
+$code-color-j:     #458;
+$code-color-k:     #a61717;
+$code-color-l:     #e3d2d2;
+$code-color-m:     #fdd;
+$code-color-n:     #faa;
+$code-color-o:     #a00;
+$code-color-p:     #dfd;
+$code-color-q:     #afa;
+$code-color-r:     #888;
+$code-color-s:     #aaa;
+$code-color-t:     #a00;
+$code-color-u:     #0086b3;
+$code-color-v:     #800080;
+$code-color-w:     #009926;
+$code-color-x:     #990073;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
