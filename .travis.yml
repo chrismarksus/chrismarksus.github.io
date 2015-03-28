@@ -6,7 +6,6 @@ script:
   - bundle exec htmlproof ./_site --only-4xx
   - scss-lint -c ._scss-lint.yml
 before_install:
-  - gem install scss-lint-reporter-checkstyle
   - gem install scss-lint
 env:
   global:
