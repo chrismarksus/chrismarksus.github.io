@@ -4,6 +4,10 @@ rvm:
 script:
   - bundle exec jekyll build
   - bundle exec htmlproof ./_site --only-4xx
+  - scss-lint -c ._scss-lint.yml
+before_install:
+  - gem install scss_lint_reporter_checkstyle
+  - gem install scss_lint
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
