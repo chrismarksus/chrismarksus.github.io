@@ -33,7 +33,7 @@ linters:
     style: same_line # or 'new_line'
 
   EmptyLineBetweenBlocks:
-    enabled: true
+    enabled: false
     ignore_single_line_blocks: true
 
   EmptyRule:
@@ -69,7 +69,7 @@ linters:
     enabled: true
     allow_non_nested_indentation: false
     character: space # or 'tab'
-    width: 4
+    width: 2
 
   LeadingZero:
     enabled: true
@@ -113,7 +113,7 @@ linters:
 
   SelectorDepth:
     enabled: true
-    max_depth: 3
+    max_depth: 4
 
   SelectorFormat:
     enabled: true
@@ -150,7 +150,7 @@ linters:
 
   StringQuotes:
     enabled: true
-    style: single_quotes # or double_quotes
+    style: double_quotes # or single_quotes
 
   TrailingSemicolon:
     enabled: true
