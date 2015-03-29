@@ -14,7 +14,7 @@ I completely agree that learning the bash/Vim way is a better way in the long ru
 
 >The problem with Vim is that have about know about and know how to configure all of the plugins to make it useful.
 
-Vim has everything you will ever need to editor code and can do it just as well as any other IDE or text editor. Yes you have to learn and know more about how your tools work. That in turn will motivate you to learn how tool configure your tools. That will lead to improved workflow and encourage you to learn more. If you augment Vim with bash commands like grep then you will in time become a Unix power house able to be deployed in any environment that has a *nix terminal. 
+Vim has everything you will ever need to editor code and can do it just as well as any other IDE or text editor. Yes you have to learn and know more about how your tools work. That in turn will motivate you to learn how tool configure your tools. That will lead to improved workflow and encourage you to learn more. If you augment Vim with bash commands like grep then you will in time become a Unix power house able to be deployed in any environment that has a *nix terminal.
 
 >Vim is not a good editor because you need a whole bunch of plugins to make it work.
 
@@ -24,7 +24,7 @@ What most people don't understand about vim plugins is that most of the plugins 
 
 No I don't I just see them for what there are and use that to my advantage.
 
-##How I pick a plugin for Vim
+## How I pick a plugin for Vim
 
 First there is really only one motivation that drives people to look at a plugin. Not just in Vim but any editor really.
 
@@ -40,13 +40,13 @@ we get complacent with what little we know about our editor and just try to get 
 
 What I do is ask myself how might I do it with what I know then I will look to fill in the gaps that I need to fill to make it work. This forces me to learn and grow. This is how I learn to pipe output in bash to other command. This was and *AH-HA* moment for me. Bash seemed kind of point until I learn how to combine commands. This added a new dimension to the knowledge I already had in my head about bash commands.
 
-##Why it maybe time to stop using a plugin
+## Why it maybe time to stop using a plugin
 
-I started with the Janus plugin arrange when I started to get the hang of Vim after the seventh time of tring. It has a lot of great plugins that made learning Vim less taxing. But over time I started to notice that as I learn more about how to do things in Vim that I start to rely more on building actions with Vim commands and I start to forget about the plugin commands. Over time I stopped use the plugins because I got tried of looking up the commands. Noticing this change my view of plugins. 
+I started with the Janus plugin arrange when I started to get the hang of Vim after the seventh time of tring. It has a lot of great plugins that made learning Vim less taxing. But over time I started to notice that as I learn more about how to do things in Vim that I start to rely more on building actions with Vim commands and I start to forget about the plugin commands. Over time I stopped use the plugins because I got tried of looking up the commands. Noticing this change my view of plugins.
 
-##Plugins I know
+## Plugins I know
 
-###Use a good packet manager
+### Use a good packet manager
 
 Packet managers make Vim plugins much easier to handle. All of these are pretty good. I use Pathogen. There are differeces between them but I find that I just don't care about what each one does better. I just want to download and manage my plugins. I don't want a feature rich manager. I don't even want to know it's there. To me that is the sign of great plugin/packet manager.
 
@@ -54,44 +54,44 @@ Packet managers make Vim plugins much easier to handle. All of these are pretty 
 [Vundle](https://github.com/gmarik/vundle)
 [Pathogen](https://github.com/tpope/vim-pathogen)
 
-###vim-trailing-whitespace
+### vim-trailing-whitespace
 
 Highlights white-space like tabs and spaces at the end of lines. It's a little thing but it makes a big difference.
 
-###vim-multiple-cursors
+### vim-multiple-cursors
 
-This is a neat little plugin. It doesn't do much but what it does is really cool. It allow you to pick instances of the same word like a varaible and change all of them at the same time. But I usually ```<shift> * cw {NEWWORD}``` then ```n``` to the next and use ```.``` or ```n```. 
+This is a neat little plugin. It doesn't do much but what it does is really cool. It allow you to pick instances of the same word like a varaible and change all of them at the same time. But I usually ```<shift> * cw {NEWWORD}``` then ```n``` to the next and use ```.``` or ```n```.
 
-###Syntastic
+### Syntastic
 
 Syntax hightlight and that's all. It does a get job and if it can even clue you into error that occur that may not be syntax related. like a comment that will cause a parser to throw an error.
 
-###Unimpaired
+### Unimpaired
 
 Make navigating the buffer lists easy ```[b``` and ```]b``` to move back and forth through the buffer list. It does more but that is all I care about and use.
 This is a great example of a plugin that improves Vim. I know how to do this without the plugin but this plugin re-organizes the keyboard commands and reduces the key strokes.
 
-###Ctrl-P
+### Ctrl-P
 
 A fuzzyfinder like (Command-T) lets you type what you remember about a file name and directory structure and shows you matches.
 
-###Fugitive
+### Fugitive
 
-It is worth downloading this for the ```:Gblame``` alone. The rest it I can do without. I don't like having the remember multiple version of the same command. ```:Gstatus``` and ```$git status```. The benifit of not having to leave Vim verses the ease of switching windows in a Tmux session and using real git command is in the negatives.  
+It is worth downloading this for the ```:Gblame``` alone. The rest it I can do without. I don't like having the remember multiple version of the same command. ```:Gstatus``` and ```$git status```. The benifit of not having to leave Vim verses the ease of switching windows in a Tmux session and using real git command is in the negatives.
 
-###Sparkup
+### Sparkup
 
 This plugin lets you use a css selector like query and expands it into html. I found this helpful when I wrote a lot html templates but now that I javascript and other non-html templating I doesn't need it.
 
-###Surround
+### Surround
 
 Auto-complete for closures of any kind ,```(```, ```[```, ```{```, and ```<html>```. *I don't use it*.
 
-###SnipMate
+### SnipMate
 
-This is like micro templates for code you type def in a ruby file. Hit ```tab``` and ```def function_name(arguments){ // code here }``` appears nicely formatted and the function_name is selected you start type and place the name then tab start typeing and replace the arguments. 
+This is like micro templates for code you type def in a ruby file. Hit ```tab``` and ```def function_name(arguments){ // code here }``` appears nicely formatted and the function_name is selected you start type and place the name then tab start typeing and replace the arguments.
 
-###tCommenter or NERDCommenter
+### tCommenter or NERDCommenter
 
 These are plugins that help comment out code. These are great examples of why
 you should do some research to find out if Vim can already do something first. I
@@ -99,4 +99,4 @@ always had trouble configure these to work with other plugins. Then I
 discoveried the beneifits of visual block selections in Vim and started using
 that to comment out code. Yes, does do the automatic commenting better but I
 find the versitility of know how the visual block selection work. Hey! That
-sound like good [post]({% post_url 2014-09-12-commenting-out-code-with-visual-block-in-vim %}).   
+sound like good [post]({% post_url 2014-09-12-commenting-out-code-with-visual-block-in-vim %}).

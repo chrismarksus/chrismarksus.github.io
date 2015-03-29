@@ -3,7 +3,7 @@ layout: post
 title: 'Sorting text in Vim'
 date: 2014-12-18 10:00:00
 category: editor
-tags: vim 
+tags: vim
 ---
 
 It's that gherkin feature file again. After running the test a number of times an tring to read the string that failed you realize that it would make it easier if the strings where sorted. But you need a fast way to do it. Manually sorting text is painful and not the good kind that teaches you not to touch hot stoves. It's the "Why do i keep hitting myself in the head with a hammer?" kind of pain, and that's stupid and painful.
@@ -20,7 +20,7 @@ Let imagine that the strings with the pipes are on lines 17-21.
 Given that I have a table of data
 And That table is not sorted
 When I use Vim to sort the table
-Then I get a pretty table   
+Then I get a pretty table
   | Can you find the String          |
   | The string to the file           |
   | By the string in the file        |

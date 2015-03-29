@@ -25,7 +25,7 @@ and self documentation. By placing a class inside and another class you are
 saying either any object that uses this class will need that other variables,
 methods, or whatever is in this class or if it is private then nobody is going
 to use this but this class. Don't make a dependency if zero to one objects in
-your program are using it. If 2 or more need it then yes, make it a dependency.  
+your program are using it. If 2 or more need it then yes, make it a dependency.
 
 >I am assuming that you are working in a language that allows objects or classes
 >within objects or classes like JavaScript, ruby, etc... If not, you will want
@@ -34,7 +34,7 @@ your program are using it. If 2 or more need it then yes, make it a dependency.
 If you are luck enough to have a wide screen monitor with your command line open
 full screen or a command prompt that is wide enough for 2 80 column screens
 side-by-side then this is how I do it. If not you can do the same thing but with
-a few extra steps. 
+a few extra steps.
 
 >Before you start turn on line numbers with ```:set number``` if it is not on
 >already. You will need it for this.
@@ -44,7 +44,7 @@ a few extra steps.
 Start by splitting the screen in half vertically with ```:vsp``` or ```<ctrl-w>
 v```.
 
-![split in half](/assets/images/posts/large_file_vim_vertical_split_2014-09-04.png) 
+![split in half](/assets/images/posts/large_file_vim_vertical_split_2014-09-04.png)
 
 In one of the halves I split the window horizontally so I have the Vim edit
 split up as one half and 2 quarter panels with the same file in each. If you

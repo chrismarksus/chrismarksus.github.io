@@ -9,10 +9,9 @@ Keeping your gherkin step definitions clean is a difficult task. But with a cucu
 
 <!--more-->
 
+The command to run in the command line is ```cucumber --dry-run -f stepdefs```. This will a second or two and you will dashes print on the screen as it is working. I believe each dash is a file that is read.
 
-The command to run in the command line is ```cucumber --dry-run -f stepdefs```. This will a second or two and you will dashes print on the screen as it is working. I believe each dash is a file that is read. 
-
-Once it is complete you will see a list of steps. If a step is not match in the search you will see the line **'NOT MATCHED BY ANY STEPS'** below the step. This is an unused step in the step definition files. See the example below: 
+Once it is complete you will see a list of steps. If a step is not match in the search you will see the line **'NOT MATCHED BY ANY STEPS'** below the step. This is an unused step in the step definition files. See the example below:
 
 ```
 /^this step def is used in a gherkin file somewhere$/
@@ -31,11 +30,11 @@ NOT MATCHED BY ANY STEPS
 
 This can be done in one step but I use two because I build up to what I want and it is easier to chop the action to do different things with the data. I use the ```-v``` to reverse match and exclude the matches I don't want.
 
-```grep -v "NOT MATCHED BY ANY STEPS"``` 
+```grep -v "NOT MATCHED BY ANY STEPS"```
 
-Then I do the same for the ```--``` dashes in the match results. 
+Then I do the same for the ```--``` dashes in the match results.
 
-```grep -Ev "^\-\-$"``` 
+```grep -Ev "^\-\-$"```
 
 ```
 cucumber --dry-run -f stepdefs | grep -A 1 "NOT MATCHED BY ANY STEPS" | grep -v "NOT MATCHED BY ANY STEPS" | grep -Ev "^\-\-$"

@@ -2,7 +2,7 @@
 layout: post
 title:  "Separate your rake tasks"
 date:   2015-01-23 22:45:51
-categories: code 
+categories: code
 tags: ruby rake
 ---
 
@@ -28,7 +28,7 @@ All you have to do at this point is add the line below to the rakefile at the to
     Dir.glob('lib/tasks/*.rake').each { |r| load r}
 ```
 
-I also have not seen any value in a separate rake file for the default so I just keep it in the *rakefile* as well. 
+I also have not seen any value in a separate rake file for the default so I just keep it in the *rakefile* as well.
 
 ```ruby
     desc "Assign default, see deploy"
