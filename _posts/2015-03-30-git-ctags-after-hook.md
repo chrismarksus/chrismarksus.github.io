@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "setup ctag to to run in the git after hook"
-date: 2015-30-30 10:00:00
+date: 2015-03-30 10:00:00
 tags: git ctags
 ---
 
