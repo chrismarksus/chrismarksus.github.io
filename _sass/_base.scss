@@ -108,9 +108,11 @@ h6 {
 a {
   color: $text-color;
   text-decoration: none;
+
   &:visited {
     color: darken($brand-color, 15%);
   }
+
   &:hover {
     color: $brand-color;
     text-decoration: underline;
@@ -128,6 +130,7 @@ blockquote {
   letter-spacing: -1px;
   font-style: italic;
   font-family: $callout-font-family;
+
   > :last-child {
     margin-bottom: 0;
   }
@@ -151,6 +154,7 @@ code {
 pre {
   padding: 8px 12px;
   overflow-x: scroll;
+
   > code {
     border: 0;
     padding-right: 0;
@@ -168,7 +172,9 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+
   @extend %clearfix;
+
   @include media-query($on-laptop) {
     max-width: -webkit-calc(800px - (#{$spacing-unit}));
     max-width: calc(800px - (#{$spacing-unit}));
@@ -197,6 +203,7 @@ pre {
     width: 16px;
     height: 16px;
     vertical-align: middle;
+
     path {
       fill: $grey-color;
     }

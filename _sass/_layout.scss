@@ -3,9 +3,11 @@
  */
 .site-header {
   min-height: 56px;
+
   // Positioning context for the mobile navigation icon
   position: relative;
   background-color: $site-header-color;
+
   @media screen and (min-width: $on-laptop) {
     & {
       background: $site-header-color url("../assets/images/chris_marks_edge.png") repeat-x bottom center;
@@ -18,19 +20,23 @@
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
+
   &,
   &:visited {
     color: $grey-color-dark;
   }
+
   & svg {
     fill: $background-color;
     max-height: 250px;
     padding: 0;
     margin: 0;
   }
+
   & a:hover svg {
     file: $brand-color;
   }
+
   @media screen and (max-width: $on-laptop) {
     & svg {
       width: 50%;
@@ -42,17 +48,21 @@
 .site-nav {
   float: right;
   line-height: 56px;
+
   .menu-icon {
     display: none;
   }
+
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
       margin-left: 20px;
     }
   }
+
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
@@ -61,6 +71,7 @@
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
+
     .menu-icon {
       display: block;
       float: right;
@@ -69,22 +80,27 @@
       line-height: 0;
       padding-top: 10px;
       text-align: center;
+
       > svg {
         width: 18px;
         height: 15px;
+
         path {
           fill: $grey-color-dark;
         }
       }
     }
+
     .trigger {
       clear: both;
       display: none;
     }
+
     &:hover .trigger {
       display: block;
       padding-bottom: 5px;
     }
+
     .page-link {
       display: block;
       padding: 5px 10px;
@@ -115,6 +131,7 @@
   font-size: 15px;
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
+
   @extend %clearfix;
 }
 
@@ -145,6 +162,7 @@
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     width: calc(50% - (#{$spacing-unit} / 2));
   }
+
   .footer-col-3 {
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width: calc(100% - (#{$spacing-unit} / 2));
@@ -171,6 +189,7 @@
 .page-heading {
   font-size: 20px;
   width: 20%;
+
   & svg {
     float: left;
   }
@@ -179,6 +198,7 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+
   > li {
     margin-bottom: $spacing-unit;
   }
@@ -206,6 +226,7 @@
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
+
   @include media-query($on-laptop) {
     font-size: 36px;
   }
@@ -213,20 +234,26 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+
   h2 {
     font-size: 32px;
+
     @include media-query($on-laptop) {
       font-size: 28px;
     }
   }
+
   h3 {
     font-size: 26px;
+
     @include media-query($on-laptop) {
       font-size: 22px;
     }
   }
+
   h4 {
     font-size: 20px;
+
     @include media-query($on-laptop) {
       font-size: 18px;
     }
