@@ -11,7 +11,7 @@ before_install:
   - gem install mdl
   - gem install redcarpet
   - gem install scss-lint
-  - gem install htmlproof
+  - gem install html-proof
   - gem install rouge
 env:
   global:
