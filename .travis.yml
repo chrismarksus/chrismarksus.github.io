@@ -8,9 +8,7 @@ script:
   - bundle exec jekyll build
   - scss-lint -c ._scss-lint.yml
 before_install:
-  - gem install mdl
-  - gem install scss-lint
-  - gem install rouge
+  - gem install mdl scss-lint rouge html-proofer
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
