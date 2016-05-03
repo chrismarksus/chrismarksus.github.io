@@ -9,6 +9,7 @@ script:
   - scss-lint -c ._scss-lint.yml
 before_install:
   - gem install mdl
+  - gem install redcarpet
   - gem install scss-lint
 env:
   global:
