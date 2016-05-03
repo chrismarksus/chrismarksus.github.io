@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 2.1
 script:
+  - gem list
   - mdl -r MD003,MD004,MD005,MD006,MD007,MD008,MD010,MD011,MD012,MD014,MD018,MD019,MD020,MD021,MD023,MD024,MD025,MD026,MD027,MD028,MD029,MD030,MD032 _posts/
   - sass-convert --from scss --to scss --in-place --recursive _sass
   - bundle exec jekyll build
