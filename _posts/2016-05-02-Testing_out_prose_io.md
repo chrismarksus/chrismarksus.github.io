@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Giving Prose.io a try
-date: 2016-05-08T00:00:00.000Z
+date: 2016-05-02 22:45:51
 categories: blogging
 tags: editor
 published: true
