@@ -12,6 +12,7 @@ I have been getting tired of hit arrow keys to moving around in my commands in b
 > I will be breaking this up into different parts as I learn these and build muscle memory. See Part 2, Part 3, and Part 4.
 
 These are the key motions to move around in the terminal:
+
 * Move one character backwards ```Ctrl``` + ```b```
 * Move one character forwards ```Ctrl``` + ```f```
 * Move one word forwards ```Alt``` + ```f```
