@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Moving around in the command line Part 1"
-date: 2015-00-00 10:00:00
+date: 2016-06-11 10:00:00
 tags: bash
 ---
 
